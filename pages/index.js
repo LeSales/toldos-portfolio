@@ -11,9 +11,8 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
 `
 
-const Wrapper = styled.body`
+const Wrapper = styled.div`
 background-color: #FFeebb;
-height: 100vh;
 `;
 
 export default function Home() {
