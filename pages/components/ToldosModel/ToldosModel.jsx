@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 function ToldosModel(){
-    return <Wrapper>
+    return <Wrapper className="products">
         <div>To do: Toldos Model carousel</div>
     </Wrapper>
 }

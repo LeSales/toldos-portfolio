@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 function Contact(){
-    return <Wrapper>
+    return <Wrapper className="contact">
         <div>To do: Contact and form</div>
     </Wrapper>
 }

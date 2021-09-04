@@ -7,26 +7,68 @@ align-items: center;
 `;
 
 function Header() {
-    return (
-      <Wrapper>
-        <Logo>Logo</Logo>
-        <Menu></Menu>
-      </Wrapper>
-    );
-  }
+  return (
+    <Wrapper className="home">
+      <Logo>Logo</Logo>
+      <Menu></Menu>
+    </Wrapper>
+  );
+}
 
-  function Menu(){
-    return (
-      <Navigation>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Produtos</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </Navigation>
-    )
-  }
+function Menu() {
+  return (
+    <Navigation>
+      <ul>
+        <li>
+          <a
+            href="/"
+            onClick={(e) => {
+              let home = document.querySelector(".home");
+              e.preventDefault();
+              home && home.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            onClick={(e) => {
+              let home = document.querySelector(".about");
+              e.preventDefault();
+              home && home.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Sobre
+          </a>
+        </li><li>
+          <a
+            href="/"
+            onClick={(e) => {
+              let home = document.querySelector(".products");
+              e.preventDefault();
+              home && home.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Produtos
+          </a>
+        </li><li>
+          <a
+            href="/"
+            onClick={(e) => {
+              let home = document.querySelector(".contact");
+              e.preventDefault();
+              home && home.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Contato
+          </a>
+        </li>
+      </ul>
+    </Navigation>
+  );
+}
 
 export const Wrapper = styled.header`
   display: flex;
@@ -51,21 +93,20 @@ export const Navigation = styled.nav`
     display: flex;
     text-decoration: none;
     list-style: none;
-    
-    li{
+
+    li {
       font-size: 2rem;
       padding: 0 1rem;
 
-      a{
+      a {
         text-decoration: none;
 
-        :visited{
+        :visited {
           color: inherit;
         }
       }
     }
   }
 `;
-
 
 export default Header;

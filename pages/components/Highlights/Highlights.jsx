@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 function Highlights(){
-    return <Wrapper>
+    return <Wrapper className="about">
         <div>To do: Highlights carousel</div>
     </Wrapper>
 }
