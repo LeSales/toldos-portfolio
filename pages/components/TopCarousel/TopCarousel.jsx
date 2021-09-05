@@ -11,14 +11,16 @@ align-items: center;
 export const Wrapper = styled.div`
     ${flexCenter}
     background-color: #cecece;
-    height: 70vh;
+    height: 50vh;
 
-   
+   .carousel{
+       height:30vh;
+   }
 `;
 
 function TopCarousel() {
     return <Wrapper>
-        <Carousel centerMode >
+        <Carousel centerMode={true}>
             <div className="carousel">
                 <img src="/1.jpg"></img>
             </div>
