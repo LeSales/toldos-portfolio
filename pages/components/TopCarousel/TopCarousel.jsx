@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 
 const flexCenter = `
 display: flex;
@@ -13,24 +11,25 @@ export const Wrapper = styled.div`
     background-color: #cecece;
     height: 50vh;
 
-   .carousel{
-       height:30vh;
-   }
+    .image-gallery{}
+   
 `;
+
+const images = [
+    {
+        original: '/1.jpg'
+    },
+    {
+        original: '/2.jpg'
+    },
+    {
+        original: '/3.jpg'
+    }
+];
 
 function TopCarousel() {
     return <Wrapper>
-        <Carousel centerMode={true}>
-            <div className="carousel">
-                <img src="/1.jpg"></img>
-            </div>
-            <div className="carousel">
-                <img src="/2.jpg"></img>
-            </div>
-            <div className="carousel">
-                <img src="/3.jpg"></img>
-            </div>
-        </Carousel>
+        to do: top carousel
     </Wrapper>
 }
 
